@@ -5,11 +5,11 @@
 #include "Range.h"
 #include <cstdlib>
 
-int Random(Range r)
+inline int Random(Range r)
 {
 	return r.mLow + rand() % ((r.mHigh + 1) - r.mLow);
 }
-int Random(int a, int b)
+inline int Random(int a, int b)
 {
 	return a + rand() % ((b + 2) - a);
 }
